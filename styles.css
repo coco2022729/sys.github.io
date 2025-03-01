@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+.header {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.back-button {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-icon {
+    font-size: 20px;
+    color: #333;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.company-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #edfcff;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-info h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.certification-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    font-size: 12px;
+    color: #666;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.certification-type {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    
+}
+
+.certification-type h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.validity {
+    font-size: 14px;
+    color: #666;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.section h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.service-tag {
+    font-size: 13px;
+    color: #666;
+    padding: 5px 12px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item label {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.info-item span, .info-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+.certificate {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+}
+.info-item-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.consultation-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #40a9ff;
+}
+
+/* 提示框样式 */
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+} 
