@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二维码</title>
+    <title>认证详情</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>这是一个二维码网页</div>
+    <div class="container">
+        <header class="header">
+            <div class="back-button">
+                <span class="back-icon">&#8592;</span>
+            </div>
+            <h1>认证详情</h1>
+        </header>
+
+        <div class="company-info">
+            <div class="company-logo">
+                <img src="./logo.jpg" alt="公司logo">
+            </div>
+            <h2>哈尔滨囍悦传媒科技有限公司</h2>
+            <div class="certification-tags">
+                <span class="tag">已入驻平台</span>
+                <span class="tag">微商保证金</span>
+                <span class="tag">认证营业执照</span>
+            </div>
+        </div>
+<div style="padding: 0 10px;">
+        <div class="certification-type">
+            <div style="font-size: 16px; font-weight: bold;margin-bottom: 10px;border-bottom: 1px solid #ddd;padding-bottom: 10px;">平台认证区域服务商</div>
+            <p class="validity">身份有效期至 2025-12-31</p>
+        </div>
+
+        
+        <div class="certification-type" style="margin-top: 20px;">
+            <div style="font-size: 16px; font-weight: bold;margin-bottom: 10px;border-bottom: 1px solid #ddd;padding-bottom: 10px;">授权区域</div>
+            <p class="validity">黑龙江省 （哈尔滨市 大庆市 牡丹江市）</p>
+        </div>
+    
+        <div class="certification-type" style="margin-top: 20px;">
+            <div style="font-size: 16px; font-weight: bold;margin-bottom: 10px;border-bottom: 1px solid #ddd;padding-bottom: 10px;">基础信息</div>
+            <div class="info-item-1">
+             <div style="color: #999;width: 21%;margin-right: 10px;font-weight: 500; font-size: 14px;">服务领域</div>
+            <div style="text-align: left; width: 79%;font-size: 14px;">短视频直播|代运营|全国实体商家推广达人探店|商品推广</div>
+            </div>
+            <div class="info-item-1">
+                <div style="color: #999;width: 21%;margin-right: 10px;font-weight: 500; font-size: 14px;">入驻时间</div>
+               <div style="text-align: left; width: 79%;font-size: 14px;">2023-08</div>
+               </div>
+               <div class="info-item-1">
+                <div style="color: #999;width: 21%;margin-right: 10px;font-weight: 500; font-size: 14px;">公司简介</div>
+               <div style="text-align: left; width: 79%;font-size: 14px;   ">公司目前签约商家门店数量超1700家，收起MV支付额过千万，Mcn机构等级为S2
+                ，专注抖音本地吃喝玩乐，服务商家，争取更多门
+                店曝光和客流，降低宣传成本，提供专业服务 </div>
+               </div>
+               <div style="display: flex;justify-content: space-between;">
+                <div style="color: #999;width: 21%;margin-right: 10px;font-weight: 500; font-size: 14px;">授权证书</div>
+                <div style="text-align: left; width: 79%;font-size: 14px;">
+                 <img src="./certificate.jpg" alt="授权证书" style="height: 120px;">
+                </div>
+               </div>
+            
+         </div>
+        </div>
+
+        </div>
+
+  
+
+        <div class="consultation-button">
+            <button id="consultBtn">免费咨询</button>
+        </div>
+    </div>
+
+    <!-- 添加提示框 -->
+    <div class="toast" id="toast">系统繁忙，请稍后再试</div>
+
+    <script>
+        document.getElementById('consultBtn').addEventListener('click', function() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
